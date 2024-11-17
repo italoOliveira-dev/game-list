@@ -10,6 +10,6 @@ public record GameMiniDTO(Long id, String title, Integer year, String imgUrl, St
     }
 
     public static GameMiniDTO toDTO(GameMiniProjection projection) {
-        return new GameMiniDTO(projection.getId(), projection.getTitle(), projection.getYear(), projection.getImgUrl(), projection.getShortDescription());
+        return new GameMiniDTO(projection.getId(), projection.getTitle(), projection.getGameYear(), projection.getImgUrl(), projection.getShortDescription());
     }
 }
